@@ -2,9 +2,6 @@
 
 X-Psychology is a web application that provides ideological insights into a Twitter (now X) profile by analyzing the user's liked tweets. This tool can be particularly useful for recruiters or anyone interested in understanding a user's perspective based on their public activity. By examining the content a user engages with, X-Psychology offers a glimpse into their potential viewpoints and interests.
 
-Sure, a "like" doesn’t always mean full agreement — but it reveals something about what resonates with them in their free time. Why does this person engage with that kind of content? Are they left-wing or right-wing? Do they hold views that align with your company culture?
-
-
 ## How It Works
 
 The application uses Selenium to scrape the liked tweets of a target user. It then employs a Hugging Face model to perform sentiment and ideological analysis on the collected data. The results are presented in a clear and concise report, categorizing the user's likes into different ideological spectrums.
