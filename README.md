@@ -10,7 +10,15 @@ Likes say a lot.
 Goals:
 Our primary goal is to infer the user's ideological leaning. This is highly valuable for recruiters, as it offers a deeper understanding of a candidate beyond their résumé.
 
+# HOW TO USE IT
 
+1) put your username, password and your tarjet username in config.py.
+
+2) run twitter_analyzer. this will open your browser, and log in. then will see the likes of the target profile. finally will save it into a data base.
+
+3) run read_tweets to see the likes saved.
+
+4) Gemini Cli will show you the ideological profile of the target user
 
 
 
