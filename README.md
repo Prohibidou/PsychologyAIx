@@ -1,28 +1,64 @@
-# Xpsychology
+# X-Psychology
 
-
-This app provides deep insight into a user's mindset through their X (formerly Twitter) profile. It's especially useful for recruitment, since it's hard to fake what someone genuinely likes on X. Most people engage with content that reflects their true interests.
+X-Psychology is a web application that provides ideological insights into a Twitter (now X) profile by analyzing the user's liked tweets. This tool can be particularly useful for recruiters or anyone interested in understanding a user's perspective based on their public activity. By examining the content a user engages with, X-Psychology offers a glimpse into their potential viewpoints and interests.
 
 Sure, a "like" doesn’t always mean full agreement — but it reveals something about what resonates with them in their free time. Why does this person engage with that kind of content? Are they left-wing or right-wing? Do they hold views that align with your company culture?
 
-Likes say a lot.
 
-Goals:
-Our primary goal is to infer the user's ideological leaning. This is highly valuable for recruiters, as it offers a deeper understanding of a candidate beyond their résumé.
+## How It Works
 
-# HOW TO USE IT
+The application uses Selenium to scrape the liked tweets of a target user. It then employs a Hugging Face model to perform sentiment and ideological analysis on the collected data. The results are presented in a clear and concise report, categorizing the user's likes into different ideological spectrums.
 
-Install Python 3.11.7. or higher. 
+## Installation
 
+To run X-Psychology on your local machine, follow these steps:
 
-1) put your username, password and your tarjet username in config.py.
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/X-Psychology.git
+    cd X-Psychology
+    ```
 
-2) run twitter_analyzer. this will open your browser, and log in. then will see the likes of the target profile. finally will save it into a data base.
+2.  **Create a virtual environment:**
+    ```bash
+    python -m venv venv
+    ```
 
-3) run read_tweets to see the likes saved.
+3.  **Activate the virtual environment:**
+    *   On Windows:
+        ```bash
+        venv\Scripts\activate
+        ```
+    *   On macOS and Linux:
+        ```bash
+        source venv/bin/activate
+        ```
 
-4) Gemini Cli will show you the ideological profile of the target user
+4.  **Install the required dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+## Usage
+
+1.  **Run the Flask application:**
+    ```bash
+    python app.py
+    ```
+
+2.  **Open your web browser** and navigate to `http://127.0.0.1:5000`.
+
+3.  **Fill in the required fields:**
+    *   **Your Twitter Username (Without @):** Your personal Twitter handle.
+    *   **Your Twitter Password:** Your personal Twitter password.
+    *   **Username of the Target User To Analyze (Without @):** The Twitter handle of the user you want to analyze.
+    *   **Tweet Limit:** The maximum number of tweets to analyze.
+
+4.  **Click "Analyze"** and wait for the report to be generated.
+
+## Disclaimer
+
+This tool is intended for informational purposes only. The analysis is based on publicly available data and should not be used as the sole factor in making decisions about individuals. The accuracy of the ideological analysis is dependent on the performance of the underlying machine learning model and the quality of the data collected.
 
 
 
