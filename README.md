@@ -1,16 +1,14 @@
 # Xpsychology
 
 
-This app allows you to get an accurate insight about a X (Twitter) profile. So useful to hire somebody, because of we know how annoying is to fake your likes in your X. Almost everybody likes what he actually likes
+This app provides deep insight into a user's mindset through their X (formerly Twitter) profile. It's especially useful for recruitment, since it's hard to fake what someone genuinely likes on X. Most people engage with content that reflects their true interests.
 
-Sure, a like doesnt mean he actually believe or agree with that, but is a way to understand the user´s mind. Why does he likes that stuff in his free time ? is he left or right wing ? i dont wanna people with that ideology. 
+Sure, a "like" doesn’t always mean full agreement — but it reveals something about what resonates with them in their free time. Why does this person engage with that kind of content? Are they left-wing or right-wing? Do they hold views that align with your company culture?
 
-Likes of people says a lot ! 
+Likes say a lot.
 
-
-Goals :
-
-* Our first mission is to get the user´s ideology. That says a lot to a recruiter that is hiring.
+Goals:
+Our primary goal is to infer the user's ideological leaning. This is highly valuable for recruiters, as it offers a deeper understanding of a candidate beyond their résumé.
 
 
 
