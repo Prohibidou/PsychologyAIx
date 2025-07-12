@@ -22,6 +22,11 @@ To run X-Psychology on your local machine, follow these steps:
     ```
 
 3.  **Activate the virtual environment:**
+        *   On gitbash:
+        ```bash
+        source venv/Scripts/activate
+        ```
+
     *   On Windows:
         ```bash
         venv\Scripts\activate
@@ -31,7 +36,7 @@ To run X-Psychology on your local machine, follow these steps:
         source venv/bin/activate
         ```
 
-4.  **Install the required dependencies:**
+5.  **Install the required dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
