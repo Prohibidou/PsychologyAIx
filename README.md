@@ -12,6 +12,9 @@ Our primary goal is to infer the user's ideological leaning. This is highly valu
 
 # HOW TO USE IT
 
+Install Python 3.11.7. or higher. 
+
+
 1) put your username, password and your tarjet username in config.py.
 
 2) run twitter_analyzer. this will open your browser, and log in. then will see the likes of the target profile. finally will save it into a data base.
