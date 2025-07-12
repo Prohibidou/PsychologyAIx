@@ -1,0 +1,5 @@
+pandas
+transformers
+torch
+sentencepiece
+accelerate

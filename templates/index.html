@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>X-Psychology</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="logo">X</div>
+    <h1>X-Psychology</h1>
+    <form action="/analyze" method="post">
+        <label for="twitter_user">Your Twitter Username (Without @):</label><br>
+        <input type="text" id="twitter_user" name="twitter_user" required><br><br>
+
+        <label for="twitter_pass">Your Twitter Password:</label><br>
+        <input type="password" id="twitter_pass" name="twitter_pass" required><br><br>
+
+        <label for="target_user">Username of the Target User To Analyze (Without @):</label><br>
+        <input type="text" id="target_user" name="target_user" required><br><br>
+
+        <label for="tweet_limit">Tweet Limit:</label><br>
+        <input type="number" id="tweet_limit" name="tweet_limit" value="100" required><br><br>
+
+        <input type="submit" value="Analyze">
+    </form>
+</body>
+</html>

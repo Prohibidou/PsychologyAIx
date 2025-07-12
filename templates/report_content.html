@@ -1,0 +1,41 @@
+{% if results %}
+    <h2>Ideology Analysis</h2>
+    <p><strong>Conclusion:</strong> 
+    {% set final_counts = results['counts'] | dictsort | rejectattr('0', 'equalto', 'Undetermined') | list %}
+    {% if final_counts %}
+        The profile shows a clear affinity with {{ (final_counts | sort(attribute=1, reverse=true))[0][0].upper() }}.
+    {% else %}
+        A clear ideological affinity could not be determined.
+    {% endif %}
+    </p>
+
+    <h3>Summary</h3>
+    <ul>
+    {% for ideology, count in results['counts'].items() %}
+        <li>{{ ideology }}: {{ count }} ({{ "%.2f"|format((count / results['details']|length) * 100) }}%)</li>
+    {% endfor %}
+    </ul>
+
+    <h3>Detailed List of Political Tweets</h3>
+    {% for tweet, ideology, score in results['details'] %}
+        <p>
+            <em>"{{ tweet }}"</em><br>
+            -> Classification: {{ ideology }} (Confidence: {{ "%.2f"|format(score) }})
+        </p>
+    {% endfor %}
+{% else %}
+    <p>Ideology analysis not performed (no political tweets found).</p>
+{% endif %}
+
+<hr>
+
+<h2>Non-Political Tweets</h2>
+{% if non_political %}
+    <ul>
+    {% for tweet in non_political %}
+        <li>{{ tweet }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No non-political tweets found.</p>
+{% endif %}
