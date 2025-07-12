@@ -17,7 +17,7 @@ def index():
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
-    # Generate a unique ID for this request and store the form data.
+    # Generate a unique ID for this request and store the form data
     request_id = str(time.time())
     request_data[request_id] = {
         'twitter_user': request.form['twitter_user'],
