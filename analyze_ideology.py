@@ -6,7 +6,7 @@ from collections import Counter
 import sys
 import os
 
-# --- CONFIGURATION ---
+# --- CONFIGURATION of this script ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(script_dir, "tweets.db")
 TABLE_NAME = 'liked_tweets'
