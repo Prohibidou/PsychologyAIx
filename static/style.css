@@ -1,0 +1,49 @@
+body {
+    background-color: #362419; /* Dark brown */
+    background-image: url('wood_background.jpg'); /* Add your wood background image */
+    background-size: cover;
+    color: #E0D6CC; /* Light cream color for text */
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.logo {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#log-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 8px;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #E0D6CC;
+}
+
+.report-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(54, 36, 25, 0.8); /* Darker wood color */
+    padding: 20px;
+    border-radius: 10px;
+}
