@@ -1,6 +1,7 @@
 import sqlite3
 
 DB_FILE = "tweets.db"
+script_dir = os.path.dirname(os.path.abspath(__file__))
 
 def read_tweets():
     try:
