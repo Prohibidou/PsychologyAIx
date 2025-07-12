@@ -96,8 +96,8 @@ def run_analysis(config):
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, "[data-testid='SideNav_NewTweet_Button']")))
         yield "Login successful."
 
-        yield f"Scraping likes from @{target_user}..."
-        driver.get(f"https://twitter.com/{target_user}/likes")
+        yield f"Scraping tweets and replies from @{target_user}..."
+        driver.get(f"https://twitter.com/{target_user}/with_replies")
         WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CSS_SELECTOR, "[data-testid='tweetText']")))
 
         found_tweets = set()
