@@ -1,0 +1,7 @@
+We will use this model to know if a tweet is political or a-political :
+https://huggingface.co/eventdata-utd/ConfliBERT-Spanish-Multilingual-Uncased-v2
+
+After getting this true or false, we will analyze this tweet to get its ideology :
+
+https://huggingface.co/Marxx01/PoliBERTuito
+
