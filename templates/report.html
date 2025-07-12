@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Analysis in progress...</h1>
+    <div id="log-container">Connecting to analysis stream...</div>
+
+    <div id="report-container"></div>
+
+    <script>
+        const logContainer = document.getElementById('log-container');
+        const reportContainer = document.getElementById('report-container');
+        const request_id = "{{ request_id }}";
+
+        const eventSource = new EventSource(`/stream/${request_id}`);
+
+        // Handle log messages
+        eventSource.addEventListener('log', function(event) {
+            const data = JSON.parse(event.data);
+            logContainer.textContent = data.message;
+        });
+
+        // Handle the final report
+        eventSource.addEventListener('report', function(event) {
+            const data = JSON.parse(event.data);
+            reportContainer.innerHTML = data.html;
+            logContainer.style.display = 'none'; // Hide the log container
+        });
+
+        // Handle errors
+        eventSource.addEventListener('error', function(event) {
+            const data = JSON.parse(event.data);
+            logContainer.textContent = `Error: ${data.message}`;
+            logContainer.style.color = 'red';
+            eventSource.close();
+        });
+
+        // Handle the close signal from the server
+        eventSource.addEventListener('close', function(event) {
+            eventSource.close();
+        });
+
+        // Handle generic errors (like connection failures)
+        eventSource.onerror = function(err) {
+            console.error("EventSource failed:", err);
+            logContainer.textContent = "Lost connection to the server. Please try again.";
+            logContainer.style.color = 'red';
+            eventSource.close();
+        };
+    </script>
+</body>
+</html>
