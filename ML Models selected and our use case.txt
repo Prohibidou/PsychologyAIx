@@ -1,4 +1,4 @@
-We will use this model to know if a tweet is political or a-political :
+We will use this model to know if a tweet is political or non-political :
 https://huggingface.co/eventdata-utd/ConfliBERT-Spanish-Multilingual-Uncased-v2
 
 After getting this true or false, we will analyze this tweet to get its ideology :
