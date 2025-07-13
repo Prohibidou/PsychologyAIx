@@ -1,13 +1,13 @@
 body {
-    background-color: #362419; /* Dark brown */
-    background-image: url('wood_background.jpg'); /* Add your wood background image */
-    background-size: cover;
-    color: #E0D6CC; /* Light cream color for text */
-    font-family: sans-serif;
+    background-color: #000000;
+    color: #E0D6CC; 
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h1, h2, h3 {
     text-align: center;
+    font-family: 'Garamond', serif;
+    color: #C0C0C0; 
 }
 
 .logo {
@@ -19,7 +19,7 @@ h1, h2, h3 {
 form {
     width: 50%;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;
     border-radius: 10px;
 }
@@ -43,7 +43,8 @@ form {
 .report-container {
     width: 80%;
     margin: 20px auto;
-    background-color: rgba(54, 36, 25, 0.8); /* Darker wood color */
+    background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
+    border: 1px solid #C0C0C0;
 }
