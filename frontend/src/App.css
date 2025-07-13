@@ -1,0 +1,78 @@
+body {
+  background-color: #000000;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+@keyframes elegant-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-background {
+  background: linear-gradient(270deg, #000000, #434343, #000000);
+  background-size: 400% 400%;
+  animation: elegant-animation 10s ease infinite;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+}
+
+.card-header .subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: white !important;
+}
+
+.card {
+  background-color: #111111;
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  color: white;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #eee;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+}
+
+.btn-dark {
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #C0C0C0;
+  border-color: #C0C0C0;
+  color: #000;
+}
+
+.btn-dark:hover {
+    background-color: #A0A0A0;
+    border-color: #A0A0A0;
+}
