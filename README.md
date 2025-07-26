@@ -1,6 +1,9 @@
 # X-Psychology
 
-X-Psychology is a web application that provides ideological insights into a Twitter (now X) profile by analyzing the user's replies. This tool can be particularly useful for recruiters or anyone interested in understanding a user's perspective based on their public activity. By examining the content a user engages with, X-Psychology offers a glimpse into their potential viewpoints and interests.
+X-Psychology is a web application that provides ideological insights into a Twitter (now X) profile by analyzing the user's replies. 
+## 🎥 Demo
+
+[![Demo Video](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ## How It Works
 
