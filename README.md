@@ -1,6 +1,7 @@
 # Psychology AIx
 
-X-Psychology is a web application that provides ideological insights into a Twitter (now X) profile by analyzing the user's replies. 
+know the user target's political ideology with 2 clicks
+
 ## 🎥 Demo
 
 [[Demo Video]]( https://www.instagram.com/p/DMCGu1Zsyg4/ )
